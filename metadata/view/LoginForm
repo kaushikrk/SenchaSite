@@ -1,0 +1,186 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "animCollapse": true,
+        "collapsed": false,
+        "collapsible": false,
+        "container|align": "stretch",
+        "designer|userAlias": "loginForm",
+        "designer|userClassName": "LoginForm",
+        "floating": true,
+        "height": null,
+        "hidden": true,
+        "itemId": "loginForm",
+        "layout": "vbox",
+        "modal": true,
+        "title": null,
+        "titleCollapse": false,
+        "width": 400
+    },
+    "name": "MyForm",
+    "designerId": "c8754890-22f3-4a0f-934e-47c2821c49cf",
+    "viewControllerInstanceId": "90533389-6118-40a1-8a97-ba947fcde279",
+    "viewModelInstanceId": "d86404ab-a82a-4dee-ac7a-22af2a53ced5",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "User Name",
+                "margin": 10,
+                "padding": 10
+            },
+            "name": "MyTextField4",
+            "designerId": "7c2b91c9-3a47-4863-b8c4-b07e15f525ee"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "Password",
+                "inputType": "password",
+                "margin": 10,
+                "padding": 10
+            },
+            "name": "MyTextField5",
+            "designerId": "52940b50-641f-4f60-bf9f-18fb72cb910f"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "Phone",
+                "hidden": [
+                    "{!newUser}"
+                ],
+                "layout|flex": null,
+                "margin": 10,
+                "padding": 10
+            },
+            "name": "MyTextField7",
+            "configAlternates": {
+                "hidden": "binding"
+            },
+            "designerId": "b59d9494-bdb7-4c6b-bbbd-eaebcb3b09b0"
+        },
+        {
+            "type": "Ext.panel.Tool",
+            "reference": {
+                "name": "tools",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "type": "close"
+            },
+            "name": "MyTool",
+            "designerId": "54ac3771-0975-4a38-8e40-c01549c4d89a",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onToolClick",
+                        "implHandler": [
+                            "var form=tool.up('#loginForm');",
+                            "form.hide();"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "name": "onToolClick",
+                    "designerId": "ef00f30b-f1fb-43c4-8d7e-994417efebf2"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "boxLabel": "New user ?",
+                "fieldLabel": "Label",
+                "layout|flex": null,
+                "margin": 10,
+                "padding": 10,
+                "value": [
+                    "{newUser}"
+                ]
+            },
+            "name": "MyCheckbox",
+            "configAlternates": {
+                "value": "binding",
+                "initialValue": "binding"
+            },
+            "designerId": "4a8328fa-5928-4d8e-96b1-80db0bb35491"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 30,
+                "hidden": [
+                    "{!newUser}"
+                ],
+                "margin": 3,
+                "text": "Sign up",
+                "width": 100
+            },
+            "name": "MyButton2",
+            "configAlternates": {
+                "hidden": "binding"
+            },
+            "designerId": "d8f1f461-4e1c-4921-ad72-2c95b31ad115"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 30,
+                "hidden": [
+                    "{newUser}"
+                ],
+                "margin": 3,
+                "text": "Login",
+                "width": 100
+            },
+            "name": "MyButton1",
+            "configAlternates": {
+                "hidden": "binding"
+            },
+            "designerId": "4f23a32a-ce0a-4be7-94c1-5bb6d63a4d3c"
+        }
+    ]
+}

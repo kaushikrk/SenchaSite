@@ -1,0 +1,93 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainController"
+    },
+    "name": "MyController",
+    "designerId": "c8b6b620-93dc-41ef-8890-0be95ae1cc4b",
+    "cn": [
+        {
+            "type": "Ext.app.route.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "screenName"
+                ],
+                "fn": "onScreenChange",
+                "implHandler": [
+                    "if(screenName){",
+                    "    this.addScreen(screenName);",
+                    "}"
+                ],
+                "url": ":screenName"
+            },
+            "name": "onScreenChange",
+            "designerId": "443ee84a-b949-4c85-afed-094e7501385c"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "screenName"
+                ],
+                "fn": "addScreen",
+                "implHandler": [
+                    "var mc=Ext.first('#mainContainer');",
+                    "var component= this.getScreen(screenName);",
+                    "var details=Ext.create(component);",
+                    "mc.suspendLayouts();",
+                    "mc.removeAll();",
+                    "mc.add(details);",
+                    "mc.resumeLayouts(true);",
+                    ""
+                ]
+            },
+            "name": "addScreen",
+            "designerId": "7846b039-2396-49f8-ac10-0716c6a4dfd4"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "screenName"
+                ],
+                "fn": "getScreen",
+                "implHandler": [
+                    "var screenMap={",
+                    "    'list':'CBS.view.Actor.ActorsGrid',",
+                    "    'details':'CBS.view.Actor.ActorDetails',",
+                    "    'register':'CBS.view.RegistrationForm',",
+                    "    'home':'CBS.view.Dashboard'",
+                    "};",
+                    "if(screenMap[screenName]){",
+                    "    return screenMap[screenName];",
+                    "}",
+                    "else {",
+                    "    return screenMap['list'];",
+                    "}"
+                ]
+            },
+            "name": "getScreen",
+            "designerId": "3cdd8b19-b671-42eb-be1d-e14f39d1d4de"
+        }
+    ]
+}

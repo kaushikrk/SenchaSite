@@ -1,0 +1,176 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 10,
+        "designer|userAlias": "actorDetails",
+        "designer|userClassName": "Actor.ActorDetails",
+        "height": null,
+        "layout": "table",
+        "padding": 10,
+        "title": null,
+        "width": null
+    },
+    "name": "MyForm",
+    "designerId": "f3d4a396-588a-4dd6-b39c-e4006591e8f8",
+    "viewControllerInstanceId": "74140070-dacb-48e2-b6cc-4498442c4c68",
+    "viewModelInstanceId": "e89503b3-7308-4ddc-bee4-235bf05f70bc",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "img-detail"
+                ],
+                "height": null,
+                "imgCls": "img-detail",
+                "layout|colspan": 3,
+                "src": [
+                    "{actor.actorPhoto}"
+                ],
+                "width": null
+            },
+            "name": "MyImg1",
+            "configAlternates": {
+                "src": "binding"
+            },
+            "designerId": "93d1158b-e8d8-4622-b9b7-2f3db21f42b4"
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|colspan": 5,
+                "margin": 10,
+                "title": "Actor Details"
+            },
+            "name": "MyFieldSet",
+            "designerId": "041e759e-eb79-40b7-aeac-5344045f5a07",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Name",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.actorName}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyDisplayField",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "d5226d76-224d-4ab4-a4a8-0bcd3320c3e5"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Gender",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.actorGender}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyDisplayField1",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "94056516-1216-4aa4-ad3f-c8ceb24922fa"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Age",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.actorAge}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyDisplayField2",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "a98a24c0-d4ad-435d-9ec3-16e6f0c791f2"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Contact Number",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.contactNumber}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyDisplayField3",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "fc6ced43-0304-4cad-a2cc-0181bfc3d2e3"
+                },
+                {
+                    "type": "Ext.form.field.Display",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Work Profile",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.workProfile}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyDisplayField4",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "1b3a7c1a-3710-431a-8cb8-0160b03cbaf9"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+{"_comment":"Please don't edit. This is Architect data.","name":"CBS","resources":["resources/css/globalstyles.css"],"requires":[],"theme":"theme-neptune-8600a5b6-5f2e-43db-8cf4-7120b7e4cb34","classpath":"${app.dir}/app,${app.dir}/resources/js/","css":[{"path":"resources/css/globalstyles.css"}],"js":[{"path":"resources/js/global.js","x-compile":true,"includeInBundle":true}]}

@@ -1,0 +1,17 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "defer": false,
+        "designer|userClassName": "js_9begtmr5",
+        "includeInBundle": true,
+        "url": "resources/js/global.js",
+        "x-compile": true
+    },
+    "name": "js",
+    "designerId": "d227a605-f4f8-4496-a0fb-1a820f5e704f"
+}

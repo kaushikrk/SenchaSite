@@ -1,0 +1,14 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css_1zqwcn42",
+        "url": "resources/css/globalstyles.css"
+    },
+    "name": "css",
+    "designerId": "e13fedd6-b267-4ffc-864a-ea39d1e72677"
+}

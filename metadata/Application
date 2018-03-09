@@ -1,0 +1,48 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MainController"
+        ],
+        "defaultToken": "home",
+        "models": [
+            "ActorModel"
+        ],
+        "name": "CBS",
+        "views": [
+            "Actor.ActorsGrid",
+            "Viewport",
+            "Actor.ActorDetails",
+            "RegistrationForm",
+            "Common.MenuBar",
+            "LoginForm",
+            "MyContainer"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var login=Ext.create('CBS.view.LoginForm');",
+                    "// setTimeout(login.show(),300);"
+                ]
+            },
+            "name": "launch",
+            "designerId": "ed65656e-7687-4b4b-ba46-c01d117a65ae"
+        }
+    ]
+}

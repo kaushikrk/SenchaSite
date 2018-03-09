@@ -1,0 +1,43 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "dashboard",
+        "designer|userClassName": "DashboardViewController"
+    },
+    "designerId": "6d6a6074-ce7e-4f89-bb81-f9eb992046e6",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "autochange",
+                "implHandler": [
+                    "i=1;",
+                    "var me=this;",
+                    "var vmd=me.getViewModel();",
+                    "var interValId=setInterval(function(){",
+                    "    i++;",
+                    "    if(i<40){",
+                    "        vmd.set('dashboardPic','resources/images/ActorPhotos/'+i+'.jpg');",
+                    "    } else{",
+                    "        i=0;",
+                    "    }",
+                    "},3000);",
+                    "console.log(interValId);",
+                    "vmd.set('interValId',interValId);"
+                ]
+            },
+            "name": "autochange",
+            "designerId": "ac8138fe-762d-41e5-b156-1b6f8a952a63"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "common.menubar",
+        "designer|userClassName": "Common.MenuBarViewModel"
+    },
+    "designerId": "1ea9fb16-35fa-4e77-933a-52f56253a794"
+}

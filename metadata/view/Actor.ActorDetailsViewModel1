@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "registrationform",
+        "designer|userClassName": "Actor.ActorDetailsViewModel1"
+    },
+    "name": "Actor.ActorDetailsViewModel1",
+    "designerId": "f40cb05a-9567-4902-9cac-5e413b0306b1"
+}

@@ -1,0 +1,50 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "registrationform",
+        "designer|userClassName": "Actor.ActorDetailsViewController1"
+    },
+    "name": "Actor.ActorDetailsViewController1",
+    "designerId": "41be282a-e04d-4d11-85d4-797b91f72a6b",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "files"
+                ],
+                "fn": "loadImages",
+                "implHandler": [
+                    "console.log(files);",
+                    "var reader = new FileReader();",
+                    "var ls=localStorage;",
+                    "var me=this.getView();",
+                    "var con=Ext.getCmp('uploadedImages');",
+                    "if(files.length>0){",
+                    "    for(i=0;i<files.length;i++){",
+                    "    var img= {",
+                    "        xtype:'image',",
+                    "        src:window.URL.createObjectURL(files[i]),",
+                    "        cls:'img-detail'",
+                    "    };",
+                    "    con.add(img);",
+                    "    }",
+                    "",
+                    "}"
+                ]
+            },
+            "name": "loadImages",
+            "designerId": "d715215a-36b1-48b2-b88d-def787dbbc58"
+        }
+    ]
+}

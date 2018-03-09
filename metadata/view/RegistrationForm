@@ -1,0 +1,306 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 10,
+        "designer|userAlias": "registrationForm",
+        "designer|userClassName": "RegistrationForm",
+        "height": null,
+        "layout": "table",
+        "padding": 10,
+        "title": null,
+        "width": null
+    },
+    "name": "Actor.ActorDetails1",
+    "designerId": "ea3d0fd2-bebb-41d6-8329-b0c285068468",
+    "viewControllerInstanceId": "41be282a-e04d-4d11-85d4-797b91f72a6b",
+    "viewModelInstanceId": "f40cb05a-9567-4902-9cac-5e413b0306b1",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 450,
+                "layout|colspan": 5,
+                "margin": 10,
+                "title": "Actor Details",
+                "width": 450
+            },
+            "name": "MyFieldSet",
+            "designerId": "8365efe1-88d1-4ea4-a726-885c4491bc94",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Name",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.actorName}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyTextField",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "50e939ee-2945-4cfe-9dd8-fcbd067a0bd7"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Gender",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.actorGender}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyTextField1",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "005b091f-a40e-4576-bfa6-66be2b5110cb"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Age",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.actorAge}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyTextField2",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "c1d289eb-8dfb-4cff-9571-700edce08f66"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Contact Number",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.contactNumber}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyNumberField",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "a5f81b53-9a19-488f-aba4-2bfbf35441c4"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Work Profile",
+                        "layout|anchor": "100%",
+                        "margin": 15,
+                        "value": [
+                            "{actor.workProfile}"
+                        ],
+                        "width": 300
+                    },
+                    "name": "MyTextField3",
+                    "configAlternates": {
+                        "value": "binding"
+                    },
+                    "designerId": "2675fe6a-8796-4d69-9a2f-5e6b19bd5eba"
+                },
+                {
+                    "type": "Ext.Component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoEl": [
+                            "{",
+                            "tag:'input',",
+                            "type:'file',",
+                            "multiple:true,",
+                            "accept:'image/*'",
+                            "",
+                            "}"
+                        ],
+                        "hidden": true,
+                        "html": null,
+                        "id": "profileImageUpload",
+                        "itemId": "fileUpload"
+                    },
+                    "name": "MyComponent1",
+                    "designerId": "7e162245-aa57-4dcd-85fa-051e797f8c58",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onProfileImageUploadRender",
+                                "implHandler": [
+                                    "var me=this;",
+                                    "component.getEl().on('change',function(evt){",
+                                    "    me.loadImages(evt.target.files);",
+                                    "});"
+                                ],
+                                "name": "render",
+                                "scope": "me"
+                            },
+                            "name": "onProfileImageUploadRender",
+                            "designerId": "cb778e86-511e-40c9-96bf-2b868da095b6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "hidden": true,
+                        "margin": "0 0 0 250",
+                        "text": "Upload Photos"
+                    },
+                    "name": "MyButton",
+                    "designerId": "555fc03a-0598-4aea-ad4e-fb8d5d8f468d",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "var uploadEl= Ext.getDom('profileImageUpload');",
+                                    "uploadEl.click();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "a34aba1c-7b26-47c2-9236-ab7dd4be2de8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.File",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Profile Images",
+                        "margin": 15,
+                        "multi": true,
+                        "width": 300
+                    },
+                    "name": "MyFileUpload",
+                    "configAlternates": {
+                        "multi": "boolean"
+                    },
+                    "designerId": "483afa44-8b6d-4633-b44d-f917eee6a961",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "multi",
+                            "type": "string"
+                        }
+                    ],
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onFilefieldChange",
+                                "implHandler": [
+                                    "this.loadImages(filefield.fileInputEl.dom.files);"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "name": "onFilefieldChange",
+                            "designerId": "0ff88571-91b9-4e6f-8c09-1c6bf81a419a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "border-box"
+                ],
+                "height": 450,
+                "id": "uploadedImages",
+                "itemId": "uploadedImages",
+                "maxWidth": 350,
+                "scrollable": true
+            },
+            "name": "MyContainer3",
+            "configAlternates": {
+                "scrollable": "boolean"
+            },
+            "designerId": "b270bec4-7139-47a6-9cb5-be76c50df2f3"
+        }
+    ]
+}

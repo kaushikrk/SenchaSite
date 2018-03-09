@@ -1,0 +1,127 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "page-background"
+        ],
+        "designer|initialView": true,
+        "designer|userAlias": "viewport",
+        "designer|userClassName": "Viewport",
+        "html": null,
+        "itemId": "viewport"
+    },
+    "name": "MyViewport",
+    "designerId": "df5e1b26-762b-42a9-9271-d2f6e70b9aec",
+    "viewControllerInstanceId": "b0fc6556-412f-43c3-b2a2-9c5031733a4f",
+    "viewModelInstanceId": "6df3e3b2-8a91-460b-ba23-fe42578a95f8",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox"
+            },
+            "name": "MyContainer2",
+            "designerId": "c75cc1cd-a5e3-4983-8447-58c5522ca6dd",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 60,
+                        "imgCls": "brand-logo",
+                        "src": "resources/images/brand-logo.jpg",
+                        "width": 180
+                    },
+                    "name": "MyImg",
+                    "designerId": "fcf3601e-e668-4598-8767-5361d3b47fe3"
+                },
+                {
+                    "type": "Ext.toolbar.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 8
+                    },
+                    "name": "MySpacer",
+                    "designerId": "6376ffc3-8a0b-42bb-aaa1-24df1d51f372"
+                },
+                {
+                    "type": "Ext.Component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": [
+                            "'<a href=\"#register\">Register</a>'"
+                        ],
+                        "layout|flex": 1
+                    },
+                    "name": "MyComponent",
+                    "designerId": "b38aed93-960f-4330-babf-1a3181def897"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "common.menubar1",
+            "designerId": "acc14704-be18-4a31-8529-329444458bfe",
+            "masterInstanceId": "241b7ae8-23fd-4598-9563-3273b16a8288"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "MainContainer",
+                "id": "mainContainer",
+                "itemId": "mainContainer",
+                "layout": "fit"
+            },
+            "name": "MyContainer1",
+            "designerId": "199fef35-82ac-403c-8f65-295eff3d9f4b",
+            "cn": [
+                {
+                    "type": "Ext.Component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "displayBoard"
+                    },
+                    "name": "MyComponent2",
+                    "designerId": "b7ea2ce4-5ec7-4a7b-b9a8-a74629561dc9"
+                }
+            ]
+        }
+    ]
+}

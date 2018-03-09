@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "'dashboardPic':'resources/images/ActorPhotos/1.jpg'",
+            "}"
+        ],
+        "designer|userAlias": "dashboard",
+        "designer|userClassName": "DashboardViewModel"
+    },
+    "designerId": "0a2b2670-b9f9-4e2b-89f1-363ec916d3c5"
+}

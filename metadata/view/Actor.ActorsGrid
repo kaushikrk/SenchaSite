@@ -1,0 +1,314 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "actorsGrid",
+        "designer|userClassName": "Actor.ActorsGrid",
+        "height": 500,
+        "itemId": "actorsGrid",
+        "padding": "10px",
+        "scrollable": true,
+        "store": [
+            "{actorModels}"
+        ],
+        "title": "Actors list",
+        "width": null
+    },
+    "name": "MyGridPanel",
+    "configAlternates": {
+        "store": "binding",
+        "scrollable": "boolean"
+    },
+    "designerId": "13e9faf5-1e8a-4d52-bea5-91c79460a08a",
+    "viewControllerInstanceId": "1aada785-1b87-4162-b9b5-16789a27bbd2",
+    "viewModelInstanceId": "0301e2d7-208c-47ff-ba76-18f5ad3a98cb",
+    "cn": [
+        {
+            "type": "Ext.view.Table",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyTable",
+            "designerId": "a94715e9-ee7e-42b7-961d-1d263464b299"
+        },
+        {
+            "type": "Ext.grid.filters.Filters",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyGridFiltersPlugin",
+            "designerId": "4ce53056-cae7-4af5-8f01-8e50ba07b9ad"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "actorId",
+                "text": "ID"
+            },
+            "name": "MyColumn",
+            "designerId": "5e763b7c-0db4-44db-8b46-02a95d070302"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "actorPhoto",
+                "flex": null,
+                "text": "Actor Photo"
+            },
+            "name": "MyColumn3",
+            "designerId": "a71ef9ec-d21f-4cbb-b682-cb94b2fffee2",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "return '<img src=\"'+value+'\" class=\"thumbnail-img\">';"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "4e8babe4-72bf-4cce-a1c2-36763ddacaa7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "actorName",
+                "flex": 1,
+                "text": "Actor Name"
+            },
+            "name": "MyColumn5",
+            "designerId": "bd2a0fda-2b40-4ee3-856a-a2e28102b77f"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "actorGender",
+                "flex": 1,
+                "text": "Actor Gender"
+            },
+            "name": "MyColumn2",
+            "designerId": "d3962b0c-3298-4edf-b4bb-ccfa929f7f2f"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "actorAge",
+                "flex": 1,
+                "text": "Actor Age"
+            },
+            "name": "MyColumn4",
+            "designerId": "51dfa42f-8856-41ef-b15d-ad382328454a"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "workProfile",
+                "flex": 1,
+                "text": "Work Profile"
+            },
+            "name": "MyColumn9",
+            "designerId": "ec6b1157-cb4f-40a6-b41d-fd64ea9f2dec"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": null,
+                "text": "Rating"
+            },
+            "name": "MyColumn1",
+            "designerId": "8ac2ca8a-8311-4ccf-ad84-d950306a254c",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "fn": "renderer",
+                        "implHandler": [
+                            "var me=this;",
+                            "var rating=me.setRating(3);",
+                            "return rating;"
+                        ]
+                    },
+                    "name": "renderer",
+                    "designerId": "356b80e3-19cf-4776-b807-351c8f23d124"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Action",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "menuText": null,
+                "text": "Details"
+            },
+            "name": "MyActionColumn2",
+            "designerId": "dacb2d6f-fe86-4ef0-8ed4-235eeaf4a4d1",
+            "cn": [
+                {
+                    "type": "actioncolumnitem",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "icon": "resources/images/details.jpeg",
+                        "iconCls": null
+                    },
+                    "name": "MyActionColumnItem",
+                    "designerId": "55bda0f2-0c16-4351-98f6-9e03304e32b0",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "view",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "item",
+                                    "e",
+                                    "record",
+                                    "row"
+                                ],
+                                "fn": "handler",
+                                "implHandler": [
+                                    "var mc=Ext.first('#mainContainer');",
+                                    "var actor=Ext.create({",
+                                    "    xtype:'actorDetails',",
+                                    "    title:record.get('actorName')+' Info'",
+                                    "});",
+                                    "actor.getViewModel().set('actor',record.data);",
+                                    "mc.suspendLayouts();",
+                                    "mc.removeAll();",
+                                    "mc.add(actor);",
+                                    "mc.resumeLayouts(true);"
+                                ]
+                            },
+                            "name": "handler",
+                            "designerId": "d3177499-9e97-40d0-a82b-7dbc5ee826e2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.selection.RowModel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowDeselect": true,
+                "mode": "SINGLE"
+            },
+            "name": "MyRowSelectionModel",
+            "designerId": "2266b13a-694e-497c-bb7b-a40de3a34b34"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "rating"
+                ],
+                "fn": "setRating",
+                "implHandler": [
+                    "html='';",
+                    "var clickFunction=this.getRating;",
+                    "for(i=0;i<rating;i++){",
+                    "    html+='<span class=\"fa fa-star checked\" onclick=></span>';",
+                    "}",
+                    "return html;"
+                ]
+            },
+            "name": "setRating",
+            "designerId": "c2538bff-7ca0-41fe-9245-0e69d4b50d9a"
+        }
+    ]
+}

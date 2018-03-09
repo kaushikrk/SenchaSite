@@ -1,0 +1,91 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "header"
+        ],
+        "designer|userAlias": "menuBar",
+        "designer|userClassName": "Common.MenuBar",
+        "itemId": "menuBar",
+        "layout": "table"
+    },
+    "name": "MyContainer",
+    "designerId": "241b7ae8-23fd-4598-9563-3273b16a8288",
+    "viewControllerInstanceId": "22364c46-c5ec-41d9-acc1-20a649391438",
+    "viewModelInstanceId": "1ea9fb16-35fa-4e77-933a-52f56253a794",
+    "cn": [
+        {
+            "type": "Ext.button.Split",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": "menu-btn",
+                "height": 30,
+                "itemId": "actorsMenu",
+                "margin": "0 0 0 15",
+                "text": "Actors"
+            },
+            "name": "MySplitButton",
+            "designerId": "7980f705-9862-4691-867d-a1588e85f36e",
+            "cn": [
+                {
+                    "type": "Ext.menu.Menu",
+                    "reference": {
+                        "name": "menu",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "actorsMenu",
+                        "width": 120
+                    },
+                    "name": "MyMenu",
+                    "designerId": "47a929e4-6c04-481c-bf82-d6f8ecd2ac29",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Item",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Male"
+                            },
+                            "name": "MyMenuItem",
+                            "designerId": "86b041fa-63e1-4240-b430-6ff831402459",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMenuitemClick",
+                                        "implHandler": [
+                                            "this.redirectTo('list');"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onMenuitemClick",
+                                    "designerId": "7a772d76-59db-4ee4-9530-2d3a0807facf"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

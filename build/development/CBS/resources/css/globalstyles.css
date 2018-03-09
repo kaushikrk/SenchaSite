@@ -1,0 +1,56 @@
+.header{
+    background:linear-gradient(#45ce69,#207938);
+    height:30px;
+}
+.page-background{
+    background-color:transparent;
+}
+.menu-btn {
+    background:linear-gradient(#45ce69,#207938);
+    border:none;
+}
+.menu-btn:hover {
+    background:linear-gradient(#45ce69,#207938);
+    text-decoration:none;
+    border:none;
+}
+.menu-btn:active {
+    background:linear-gradient(#45ce69,#207938);
+    color:white;
+    text-decoration:underline;
+    border:none;
+}
+.brand-logo{
+    transform:rotate(-7deg);
+}
+.offers-grid{
+    height:
+}
+.thumbnail-img {
+    height:75px;
+    width:75px;
+    transform:scale(3,3);   
+}
+.img-detail {
+    height:400px;
+    width: 300px;
+    margin:10px;
+    padding:5px;
+}
+.border-box {
+    width:500px;
+    height:500px;
+    border:2px solid none;
+}
+.checked {
+    color: orange;
+}
+.dashboard {
+    height:300px;
+    width:600px;
+    display:inline-block;
+}
+.dashboard-item {
+    height:300px;
+    width:600px; 
+}

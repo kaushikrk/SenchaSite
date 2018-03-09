@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "common.menubar",
+        "designer|userClassName": "Common.MenuBarViewController"
+    },
+    "designerId": "22364c46-c5ec-41d9-acc1-20a649391438"
+}

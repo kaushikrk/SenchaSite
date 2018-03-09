@@ -1,0 +1,89 @@
+{
+    "type": "Ext.container.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "dashboard"
+        ],
+        "designer|userAlias": "dashboard",
+        "designer|userClassName": "Dashboard",
+        "height": null,
+        "html": null,
+        "layout": null,
+        "width": null
+    },
+    "name": "MyContainer",
+    "designerId": "8762a19e-f10d-42f6-9116-41ae5061980d",
+    "viewControllerInstanceId": "6d6a6074-ce7e-4f89-bb81-f9eb992046e6",
+    "viewModelInstanceId": "0a2b2670-b9f9-4e2b-89f1-363ec916d3c5",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "alignTarget": "c-c",
+                "imgCls": "dashboard",
+                "itemId": "image",
+                "src": [
+                    "{dashboardPic}"
+                ]
+            },
+            "name": "MyImg",
+            "configAlternates": {
+                "src": "binding"
+            },
+            "designerId": "94c2f591-19b4-49ad-8700-e0d387fe9640",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onImageAfterRender",
+                        "implHandler": [
+                            "this.autochange();"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "name": "onImageAfterRender",
+                    "designerId": "bf0dd4a6-a940-4782-be08-9d897f773273"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "image"
+                        ],
+                        "fn": "onImageClick",
+                        "implHandler": [
+                            "var intervalId=vmd.get('interValId');",
+                            "console.log('clearing interval:'+intervalId);",
+                            "clearInterval(intervalId);"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "name": "onImageClick",
+                    "designerId": "346a498e-2f10-45cf-b334-2af642d4c320"
+                }
+            ]
+        }
+    ]
+}

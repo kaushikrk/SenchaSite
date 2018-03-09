@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "actor.actorsgrid",
+        "designer|userClassName": "Actor.ActorsGridViewController"
+    },
+    "designerId": "1aada785-1b87-4162-b9b5-16789a27bbd2"
+}
